@@ -39,15 +39,16 @@ dev:
 start:
 	npm start
 
-# Run scrape-check command with default URL
-# Usage: make scrape-check TOP=5
+# Run scrape-check command
+# Usage: make scrape-check URL=https://example.com TOP=5
 TOP ?= 3
+URL ?= https://apify.com/theo/ap-news-scraper
 scrape-check:
-	npm run dev -- scrape-check --top $(TOP)
+	npm run dev -- scrape-check --url "$(URL)" --top $(TOP)
 
 # Run scrape-check with custom URL
 # Usage: make scrape URL=https://example.com TOP=5
-URL ?= https://supjav.com/ja/popular
+URL ?= https://apify.com/theo/ap-news-scraper
 scrape:
 	npm run dev -- scrape-check --url "$(URL)" --top $(TOP)
 
