@@ -47,7 +47,7 @@ scrape-check:
 
 # Run scrape-check with custom URL
 # Usage: make scrape URL=https://example.com TOP=5
-URL ?= https://apify.com/theo/ap-news-scraper
+URL ?= https://supjav.com/ja/popular
 scrape:
 	npm run dev -- scrape-check --url "$(URL)" --top $(TOP)
 
